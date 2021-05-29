@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-export default async (req, res) => {
+export default async function handler(req, res) {
   const { items, email } = req.body;
 
   const transformedItems = items.map((item) => ({
@@ -34,4 +34,4 @@ export default async (req, res) => {
   });
 
   res.status(200).json({ id: session.id });
-};
+}
