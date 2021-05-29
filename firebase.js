@@ -1,12 +1,12 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCNBevClgnlb5x9lapZMTCNu4LZI4uWQsA",
-  authDomain: "next-clone-1c53b.firebaseapp.com",
-  projectId: "next-clone-1c53b",
-  storageBucket: "next-clone-1c53b.appspot.com",
-  messagingSenderId: "714907072300",
-  appId: "1:714907072300:web:407dd4ede16ea56a0ede89",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
 };
 
 const app = !firebase.apps.length
