@@ -10,7 +10,9 @@ import { selectItems, selectTotal } from "../slices/cartSlice";
 import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
+const stripePromise = loadStripe(
+  "pk_test_51Iw5V8DlbHuyKEQJrAB0qmR4FOY2EVk9ZxS8KjOYDgF8ZXbAH4JAyfMMDD3TxNiHS7qibL7YgacqZTKyfjGtU86q00Gr8B1yz1"
+);
 
 const Checkout = () => {
   const items = useSelector(selectItems);
