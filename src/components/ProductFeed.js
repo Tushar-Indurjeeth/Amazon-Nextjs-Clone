@@ -11,7 +11,7 @@ const ProductFeed = ({ products }) => {
             id={id}
             title={title}
             category={category}
-            price={price}
+            price={price * 15}
             description={description}
             image={image}
           />
@@ -32,7 +32,7 @@ const ProductFeed = ({ products }) => {
               id={id}
               title={title}
               category={category}
-              price={price}
+              price={price * 15}
               description={description}
               image={image}
             />
@@ -47,7 +47,7 @@ const ProductFeed = ({ products }) => {
             id={id}
             title={title}
             category={category}
-            price={price}
+            price={price * 15}
             description={description}
             image={image}
           />
